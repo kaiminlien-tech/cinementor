@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineMentor | Film & Language Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><div class="brandmark">▶</div><div><b>CineMentor</b><small>מנטור שפה וסרטים</small></div></div><div class="top-actions"><span class="online"><i></i><span data-i18n="ready">Ready to learn</span></span><select id="language" aria-label="Language"><option value="en">English</option><option value="he">עברית</option></select></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">YOUR PERSONAL FILM & LANGUAGE MENTOR</span><h1 data-i18n="headline">Every film is a chance to find your voice.</h1><p data-i18n="subhead">Build language skills, confidence and cultural understanding—one scene at a time.</p><div class="hero-tags"><span>Speaking</span><span>Listening</span><span>Writing</span><span>Culture</span></div></div><div class="hero-art"><div class="reel">✦</div><div class="film-card"><div class="film-icon">🎬</div><b data-i18n="filmquote">Watch. Notice. Connect. Grow.</b><small>LEARN THROUGH STORIES</small></div></div></section>
+<section class="setup panel"><div class="section-heading"><div><span class="eyebrow" data-i18n="personalize">LET'S PERSONALIZE</span><h2 data-i18n="start">Start with you</h2></div><span class="step">01 / 02</span></div>
+<div class="fields"><label><span data-i18n="level">Your language level</span><select id="level"><option value="Beginner">Beginner</option><option value="Elementary">Elementary</option><option value="Intermediate" selected>Intermediate</option><option value="Advanced">Advanced</option></select></label>
+<label><span data-i18n="audience">I am a...</span><select id="audience"><option value="Student">Student</option><option value="Teacher">Teacher</option><option value="Lifelong learner">Lifelong learner</option></select></label>
+<label class="wide"><span data-i18n="goal">What would you like to practise?</span><select id="goal"><option value="Speaking">Speaking with confidence</option><option value="Listening">Listening comprehension</option><option value="Vocabulary">Vocabulary in context</option><option value="Writing">Writing and grammar</option><option value="Film analysis">Critical film analysis</option><option value="Intercultural competence">Intercultural communication</option><option value="Personal growth">Personal growth and reflection</option></select></label></div>
+<div class="care-note"><span>☀</span><p><b data-i18n="checkinTitle">A gentle check-in</b><br><span data-i18n="checkin">Learning works better when basic needs are cared for. Have you had water, food and a short break today? You can pause whenever you need.</span></p></div>
+</section>
+<section class="workspace">
+<div class="panel chat-panel"><div class="chat-head"><div><span class="eyebrow">CINEMENTOR AI</span><h2 data-i18n="conversation">Your conversation</h2></div><button class="ghost" id="reset" data-i18n="reset">New chat ↺</button></div>
+<div class="messages" id="messages" aria-live="polite"><div class="bubble bot"><span class="avatar">🎬</span><div><b>CineMentor</b><p data-i18n="welcome">Hello! I’m glad you’re here. Choose an activity or tell me what film, scene or communication skill interests you. We’ll learn at your pace.</p></div></div></div>
+<div class="quick-actions"><button data-prompt="Give me a short film-scene vocabulary activity for my level.">Aa <span data-i18n="vocab">Vocabulary</span></button><button data-prompt="Let's practise a friendly conversation inspired by a film scene.">☏ <span data-i18n="speaking">Speaking</span></button><button data-prompt="Give me a listening comprehension challenge with a short imagined dialogue.">♫ <span data-i18n="listening">Listening</span></button><button data-prompt="Help me analyse a film character using Maslow's hierarchy of needs.">♡ <span data-i18n="maslow">Maslow</span></button><button data-prompt="Help me analyse a character's environment using Bronfenbrenner's ecological systems.">◎ <span data-i18n="bronfen">Bronfenbrenner</span></button></div>
+<form id="chatForm" class="composer"><input id="message" autocomplete="off" placeholder="Ask CineMentor something..." data-i18n-placeholder="placeholder"><button type="submit" aria-label="Send">➤</button></form><p class="privacy" data-i18n="privacy">Please avoid sharing private or identifying information. This learning bot is not a substitute for a teacher, counsellor or health professional.</p>
+</div>
+<aside class="side">
+<div class="panel activity-panel"><span class="eyebrow" data-i18n="toolkit">LEARNING TOOLKIT</span><h2 data-i18n="activities">Choose an activity</h2>
+<button class="activity" data-prompt="Create a 5-minute vocabulary-in-context activity using an original, short film-style dialogue. Include answers and feedback."><span class="activity-icon">Aa</span><span><b data-i18n="act1">Words in the scene</b><small data-i18n="act1s">Learn vocabulary in context</small></span><em>→</em></button>
+<button class="activity" data-prompt="Create a role-play dialogue for two people based on a fictional everyday film scene. Adapt it to my level and give useful phrases."><span class="activity-icon">☏</span><span><b data-i18n="act2">Scene role-play</b><small data-i18n="act2s">Practise real communication</small></span><em>→</em></button>
+<button class="activity" data-prompt="Give me a short writing task: rewrite a scene from another character's point of view, with a simple rubric."><span class="activity-icon">✎</span><span><b data-i18n="act3">Rewrite the scene</b><small data-i18n="act3s">Build writing and creativity</small></span><em>→</em></button>
+<button class="activity" data-prompt="Create a respectful intercultural comparison activity about how two cultures might communicate in the same fictional situation. Avoid stereotypes."><span class="activity-icon">◎</span><span><b data-i18n="act4">Culture & perspectives</b><small data-i18n="act4s">Explore different viewpoints</small></span><em>→</em></button>
+</div>
+<div class="panel growth-panel"><span class="eyebrow" data-i18n="growth">GROWTH & CONNECTION</span><h2 data-i18n="beyond">Learning beyond the screen</h2><div class="growth-row"><span>🌱</span><p><b data-i18n="maslowTitle">Maslow's needs</b><small data-i18n="maslowText">Well-being, safety, belonging, confidence and growth.</small></p></div><div class="growth-row"><span>🌍</span><p><b data-i18n="ecoTitle">Bronfenbrenner's systems</b><small data-i18n="ecoText">Self, family, school, community and wider culture.</small></p></div><div class="growth-row"><span>🤝</span><p><b data-i18n="connectTitle">Connect with people</b><small data-i18n="connectText">Share ideas with a trusted peer, teacher or learning group.</small></p></div></div>
+</aside></section>
+<footer><b>CineMentor</b><span data-i18n="footer">A welcoming space to learn, reflect and grow through film.</span><span>English · עברית</span></footer>
+</main><script src="script.js"></script>
+</body></html>
